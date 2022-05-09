@@ -25,20 +25,23 @@
   <body>
     <h1>What's your input?</h1>
     <form action="{{ url_for('main') }}" method="POST">
-        <fieldset>
-            <legend>Input values:</legend>
-            Temperature:
-            <input name="temperature" type="number" step="any" required>
-            <br>
-            <br> Humidity:
-            <input name="humidity" type="number" step="any"  required>
-            <br>
-            <br> Windspeed:
-            <input name="windspeed" type="number" step="any"  required>
-            <br>
-            <br>
-            <input type="submit">
-        </fieldset>
+        
+        <legend>Input values:</legend>
+        <div class="form-group">
+            <label for="temperature">Temperature</label>
+            <input type="number" class="form-control" name="temperature" step="any">
+          </div>
+          <div class="form-group">
+            <label for="humidity">Humidity</label>
+            <input type="number" class="form-control" name="humidity" step="any">
+          </div>
+          <div class="form-group">
+            <label for="windspeed">Windspeed</label>
+            <input type="number" class="form-control" name="windspeed"  step="any">
+          </div>
+          <input type="submit">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        
     </form>
     <br>
     <div class="result" valign="center">

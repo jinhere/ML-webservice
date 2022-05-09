@@ -29,4 +29,4 @@ def main():
                                                      'Humidity':humidity,
                                                      'Windspeed':windspeed},
                                      result=prediction)
-        
+# https://stackoverflow.com/questions/29086398/sklearn-turning-off-warnings/32389270        
